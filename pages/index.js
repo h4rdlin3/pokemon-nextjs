@@ -19,7 +19,7 @@ export async function getStaticProps() {
 export default function Home ({pokemons}) {
 
   return (
-    <div className="home-container bg-rose-100">
+    <div className="home-container bg-gray-200">
       <Head>
         <title>Pokemon Index</title>
       </Head>
