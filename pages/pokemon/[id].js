@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, {useState, useEffect} from 'react'
 import {useRouter} from 'next/router'
 import pokemonlogo from "../../assets/pokemonlogo.png";
@@ -67,8 +68,8 @@ const PokemonDetails = ({pokemon}) => {
                 {pokemon.stats.map(({name, value})=>
                 {
                     return (
-                        <div className='flex w-full justify-between md:w-[200px] xl:w-[300px]'>
-                        <div className="name-of-att font-medium">
+                        <div className='flex w-full justify-between md:w-[200px] xl:w-[300px] ' key={name}>
+                        <div className="name-of-att font-medium" >
                             {name}
                         </div>
                         <div className="stat-of-att">
