@@ -52,7 +52,7 @@ const PokemonDetails = ({pokemon}) => {
 
             <div className="pokemon-details-image flex justify-center items-center">
 
-                <img src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`} alt={pokemon.name} className="h-[300px] w-[320px] lg:h-[350px] lg:w-[370px] " />
+                <img src={`https://jherr-pokemon.s3.us-west-1.amazonaws.com/${pokemon.image}`} alt={pokemon.name} className="h-[280px] w-[300px] lg:h-[350px] lg:w-[370px] " />
             </div>
             <div className="pokemon-name-and-type">
                 <h1 className='text-center text-3xl font-bold mt-6'>{pokemon.name}</h1>
